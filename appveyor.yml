@@ -10,7 +10,7 @@ build: off  # использовать свой скрипт сборки
 
 install:
   - java -jar ./artifacts/app-ibank.jar &
-  - P:profile=test
+
 build_script:
   - P:profile=test
   - chmod +x gradlew
