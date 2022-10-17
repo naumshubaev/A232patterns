@@ -32,7 +32,7 @@ class AuthTest {
         $("[data-test-id=login] input").setValue(registeredUser.getLogin());
         $("[data-test-id=password] input").setValue(registeredUser.getPassword());
         $("[data-test-id=action-login]").click();
-// no messages to be checked using UI test, so I'll check the page
+// no messages to be checked using UI test, so I'll check the URL
         // BUT should it be the Dashboard?!!
         webdriver().shouldHave(url("http://localhost:9999/dashboard"));
     }
