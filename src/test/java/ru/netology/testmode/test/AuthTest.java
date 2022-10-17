@@ -20,8 +20,8 @@ class AuthTest {
 
     @BeforeEach
         void setUp() {
-        Configuration.headless = true;
-        Configuration.holdBrowserOpen = false;
+//        Configuration.headless = true;
+//        Configuration.holdBrowserOpen = false;
         open("http://localhost:9999");
     }
     @Test
